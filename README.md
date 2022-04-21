@@ -47,13 +47,13 @@ If folder named `my.cnf.d` doesn't appears, you can create it with
 
 or else can skip this step.
 
-_**\*Step-6:**_
+_**Step-6:**_
 
 After creating above directory, now it's time to install MySQL. For this execute following command.
 
 `mysql_install_db`
 
-_**\*Step-7:**_
+_**Step-7:**_
 
 Now you have to intialize MySQL, for this execute
 
@@ -61,7 +61,7 @@ Now you have to intialize MySQL, for this execute
 
 <!--`<password>` - Database password which you will use to view database in future!-->
 
-_**\*Step-8:**_
+_**Step-8:**_
 
 - Now MySQL server has started at localhost level.
 - Your MySQL doesn't have any password, hence you **cannot** connect it to Pydroid or any other programming language using connector!
@@ -76,4 +76,25 @@ FLUSH PRIVILEDGES;
 ```
 
 \*Hence, your username is `root` & password you entered in above code.
+
+_**Step-9**_
+
+**How to stop _MySQL_?**
+
+- Now paste `ps aux | grep mysql` command in terminal & output will be as follow.
+
+IMAGEIMAGEIMAGEIMAGEIMAGEIMAGEIMAGEIMAGEIMAGE
+
+- Now you have to terminate two MySQL processes!
+- Their id changes each time you run this command, so it is important to understand the output of the above code and get the id. In my case, id's are `20840` & `20920`.
+- Now we terminate this process, for this we use `kill -9 <process id>` command.
+- We terminate both this id's, in my case
+```
+kill -9 20840
+kill -9 20920
+```
+
+Now MySQL DB is installed correctly with password.
+
+_**Step-9**_
 
