@@ -55,14 +55,6 @@ After creating above directory, now it's time to install MySQL. For this execute
 
 _**Step-7:**_
 
-Now you have to intialize MySQL, for this execute
-
-`mysqld_safe -u root &` & Enter.
-
-<!--`<password>` - Database password which you will use to view database in future!-->
-
-_**Step-8:**_
-
 - Now MySQL server has started at localhost level.
 - Your MySQL doesn't have any password, hence you **cannot** connect it to Pydroid or any other programming language using connector!
 - Now type following command to connect to MySQL database for _**1st time only**_!
@@ -77,7 +69,7 @@ FLUSH PRIVILEDGES;
 
 \*Hence, your username is `root` & password you entered in above code.
 
-_**Step-9**_
+_**Step-8**_
 
 **How to stop _MySQL_?**
 
@@ -98,3 +90,12 @@ Now MySQL DB is installed correctly with password.
 
 _**Step-9**_
 
+Now, whenever you want to intialize MySQL-DB, for this execute
+
+`mysqld_safe -u root &` & Enter.
+
+`mysql -u root -p` to connect to database.
+
+`<password>` - Database password which you created above and hit Enter.
+
+After using MySQL, you can stop database as mentioned in **step-8**.
