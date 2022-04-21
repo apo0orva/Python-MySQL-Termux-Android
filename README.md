@@ -39,3 +39,28 @@ Now navigate to directory as mentioned below.
 
 `cd /data/data/com.termux.files/usr/etc`
 
+Then type `ls` and hit Enter.
+
+If folder named `my.cnf.d` doesn't appears, you can create it with 
+
+`mkdir my.cnf.d`
+
+or else can skip this step.
+
+_**\*Step-6:**_
+
+After creating above directory, now it's time to install MySQL. For this execute following command.
+
+`mysql_install_db`
+
+_**\*Step-7:**_
+
+Now you have to intialize MySQL, for this execute
+
+`mysqld_safe -u root &` & Enter.
+
+`<password>` - Database password which you will use to view database in future!
+
+_**\*Step-8:**_
+
+Now MySQL server has started at localhost level.
