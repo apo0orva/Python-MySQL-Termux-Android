@@ -59,8 +59,21 @@ Now you have to intialize MySQL, for this execute
 
 `mysqld_safe -u root &` & Enter.
 
-`<password>` - Database password which you will use to view database in future!
+<!--`<password>` - Database password which you will use to view database in future!-->
 
 _**\*Step-8:**_
 
-Now MySQL server has started at localhost level.
+- Now MySQL server has started at localhost level.
+- Your MySQL doesn't have any password, hence you **cannot** connect it to Pydroid or any other programming language using connector!
+- Now type following command to connect to MySQL database for _**1st time only**_!
+`mysql`
+- Now MySQL has started but it doesn't have any password, hence we will set it password manually by following commands.
+
+```
+use mysql;
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'your new password';
+FLUSH PRIVILEDGES;
+```
+
+\*Hence, your username is `root` & password you entered in above code.
+
