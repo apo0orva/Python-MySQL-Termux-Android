@@ -99,3 +99,7 @@ Now, whenever you want to intialize MySQL-DB, for this execute
 `<password>` - Database password which you created above and hit Enter.
 
 After using MySQL, you can stop database as mentioned in **step-8**.
+
+## Project status
+
+In-progress!
